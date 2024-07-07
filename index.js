@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 // Set the views directory (optional if you use the default 'views' folder)
 app.set('views', __dirname + '/views');
 
-app.get('/', (req, res) => {
+app.get('/resume', (req, res) => {
     res.render('home'); // This will render 'views/home.ejs'
 });
 
