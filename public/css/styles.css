@@ -1,0 +1,181 @@
+/* styles.css */
+
+/* Define the color palette variables */
+:root {
+    --primary-color: #55aedb;
+    --secondary-color: #2076a9;
+    --hover-color:#64c479;
+    --tertiary-color: #1b5f89;
+    --quaternary-color: #1b445f;
+    --quinary-color: #122c3f;
+}
+
+body {
+    font-family: 'Wittgenstein', sans-serif; /* Use Wittgenstein font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Profile section styles */
+.profile {
+    width: 300px; /* Adjust width as needed */
+    height: 100vh; /* Full height of viewport */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-color: var(--tertiary-color);  /*Use primary color for profile section */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: none;
+    /*overflow: hidden; Allow scrolling if content exceeds height */
+}
+
+.profile-pic {
+    border-radius: 50%;
+    border-width: 20px;
+    border-color: black;
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.profile h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFFFFF; /* White text color */
+}
+
+.profile_nav {
+    margin-top: 20px;
+}
+
+.navlist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navlist li {
+    margin-bottom: 10px;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: #FFFFFF; /* White text color */
+    display: block;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+.navlist li a:hover {
+    color: var(--hover-color); /* Use secondary color on hover */
+}
+
+/* Content section styles */
+.content {
+    margin-left: 300px; /* Ensure content starts after the fixed profile section */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section {
+    margin-bottom: 40px; /* Space between sections */
+    padding: 20px;
+    border-radius: var(--border-radius); /* Use border radius variable */
+}
+
+/* Individual section background colors */
+.section1 {
+    background-color: var(--tertiary-color); /* Use tertiary color */
+}
+
+.section2 {
+    background-color: var(--quaternary-color); /* Use quaternary color */
+}
+
+.section3 {
+    background-color: var(--quinary-color); /* Use quinary color */
+}
+
+.section4 {
+    background-color: var(--primary-color); /* Use primary color */
+}
+
+.section5 {
+    background-color: var(--secondary-color); /* Use secondary color */
+}
+
+/* Progress bar styles */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: var(--border-radius); /* Use border radius variable */
+    overflow: hidden;
+}
+
+.progress-bar::-webkit-progress-bar {
+    background-color: #e0e0e0;
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color: var(--primary-color); /* Use primary color for progress bar */
+}
+
+.progress-bar::-moz-progress-bar {
+    background-color: var(--secondary-color); /* Use secondary color for progress bar */
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* styles.css */
+/* Assuming you have icons for WhatsApp and LinkedIn as 'whatsapp-icon.png' and 'linkedin-icon.png' in your '/img' directory */
+
+.profile-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.round-button {
+    display: inline-flex; /* Use flexbox to center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    width: 35px; /* Adjust size as needed */
+    height: 35px; /* Adjust size as needed */
+    background-color: #e7e7e7; /* Button background color */
+    border-radius: 50%; /* Makes the button round */
+    margin: 0 10px; /* Adjust spacing between buttons */
+    text-align: center;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.round-button:hover {
+    background-color:rgb(2, 136, 141); /* Darker green on hover for WhatsApp */
+}
+
+.round-button.linkedin:hover {
+    background-color: rgb(2, 136, 141); /* Darker color on hover for LinkedIn */
+}
+
+.button-icon {
+    width: 100%; /* Adjust icon size to fill the button */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 80%; /* Limit maximum size */
+    max-height: 80%; /* Limit maximum size */
+    display: block; /* Remove extra space around inline images */
+}
+.profile-buttons a{
+    text-decoration: none;
+    color: black;
+}
+.nav-link.active {
+    color: var(--hover-color); /* Set the active link color */
+}
