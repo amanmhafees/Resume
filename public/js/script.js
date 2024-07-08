@@ -22,3 +22,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+// scripts.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.querySelector('.nav-toggle');
+    const profileNav = document.querySelector('.profile_nav');
+
+    navToggle.addEventListener('click', () => {
+        profileNav.classList.toggle('active');
+    });
+});
+
+// Get the button
+var mybutton = document.querySelector('.round-button.gotohome');
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
